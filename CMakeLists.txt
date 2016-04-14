@@ -61,6 +61,10 @@ add_executable(point_cloud2_assembler src/point_cloud2_assembler.cpp)
 target_link_libraries(point_cloud2_assembler ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 add_dependencies(point_cloud2_assembler ${PROJECT_NAME}_gencpp)
 
+add_executable(periodic_snapshotter_2 examples/periodic_snapshotter_2.cpp)
+target_link_libraries(periodic_snapshotter_2 ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+add_dependencies(periodic_snapshotter_2 ${PROJECT_NAME}_gencpp)
+
 ## unit testing
 
 if(CATKIN_ENABLE_TESTING)
